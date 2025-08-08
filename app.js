@@ -15,7 +15,7 @@ const path = "./followers.json";
   console.log("🔐 Please log in manually...");
   await page.waitForNavigation({ waitUntil: "networkidle2", timeout: 0 });
 
-  const username = 'deepinyoheart'; // CHANGE this to your profile
+  const username = 'profilename'; // CHANGE this to your profile
   await page.goto(`https://www.instagram.com/${username}/`, { waitUntil: "networkidle2" });
 
   // Wait for followers count to appear
